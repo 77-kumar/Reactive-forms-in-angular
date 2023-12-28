@@ -1,0 +1,34 @@
+<div class="container-fluid bg-gradient bg-primary text-center p-2">
+  <h2>Angular Redirect forms</h2>
+
+</div>
+<div class="container mt-3 border border-3 rounded felx d-felx ">
+  <div>
+    <form [formGroup]="submit">
+      <div class="m-2">
+        <label class="form-label cons">firstName</label>
+        <input type="text" placeholder="sai" name="first name" class="form-control" formControlName="firstName"/>
+       
+
+
+      </div>
+      <div class="m-2">
+        <label class="form-label cons">lastName</label>
+        <input type="text" placeholder="kumar" name="last name" class="form-control" required formControlName="lastName"/>
+      </div>
+      <div class="m-2">
+        <label class="form-label cons">email</label>
+        <input type="email" placeholder="email" name="email" class="form-control" formControlName="email" />
+      </div>
+      <div class="m-2">
+        <label class="form-label cons">password</label>
+        <input type="password" placeholder="password" name="password" class="form-control" formControlName="password"/>
+      </div>
+      <button class="btn btn-primary w-50  prim "(click)="show()">submit</button>
+
+
+    </form>
+  </div>
+
+
+</div>
